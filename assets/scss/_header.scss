@@ -8,12 +8,12 @@
     background: #292c40;
 
     &__contact__email {
+      .fa-envelope {
+        color: #fff;
+      }
+
       a {
         color: #ffffff !important;
-
-        &:before {
-          color: #fff;
-        }
       }
     }
   }
