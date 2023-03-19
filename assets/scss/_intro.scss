@@ -21,7 +21,7 @@
     }
 
     h1 {
-      color: $headings;
+      color: $main-color;
     }
 
     h3 {
@@ -50,12 +50,14 @@
   //   Video button and more
   &__video {
     position: absolute;
-    bottom: 20px;
+    bottom: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     width: 100%;
+
+    @include watch-video;
   }
 
   //   Shade
