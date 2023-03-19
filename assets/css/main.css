@@ -28,3 +28,6 @@ a {
 .header__top__contact__email a {
   color: #ffffff !important;
 }
+.header__top__contact__email a:before {
+  color: #fff;
+}
