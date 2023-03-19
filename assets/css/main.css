@@ -97,9 +97,6 @@ a {
   background: rgb(13, 79, 157);
   border-radius: 100px;
 }
-.intro__text__span:hover:after {
-  color: red;
-}
 .intro__video {
   position: absolute;
   bottom: 20px;
