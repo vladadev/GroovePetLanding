@@ -1,0 +1,19 @@
+@import '_var';
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #292c40;
+
+    &__contact__email {
+      a {
+        color: #ffffff !important;
+
+        &:before {
+        }
+      }
+    }
+  }
+}
