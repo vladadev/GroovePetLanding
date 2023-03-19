@@ -1,5 +1,6 @@
 // Variables
 @import '_var';
+@import '_mixins';
 
 * {
   margin: 0;
@@ -18,3 +19,4 @@ a {
 }
 
 @import '_header';
+@import '_intro';

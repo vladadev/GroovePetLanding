@@ -17,4 +17,21 @@
       }
     }
   }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 100px;
+    }
+
+    &__subscribe {
+      button {
+        @include button-mixin;
+        padding: 20px;
+      }
+    }
+  }
 }

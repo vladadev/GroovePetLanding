@@ -1,0 +1,67 @@
+.intro {
+  height: calc(100vh - 162px);
+  background-image: url('../images/groovepet_social_network_animals_1-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  font-size: 1.7rem;
+  z-index: 0;
+
+  //   Text
+  &__text {
+    position: absolute;
+    z-index: 2;
+    width: 50vw;
+    right: 50px;
+    top: 70px;
+
+    > * {
+      padding: 10px;
+    }
+
+    h1 {
+      color: $headings;
+    }
+
+    h3 {
+      font-weight: normal;
+    }
+  }
+
+  //   Video button and more
+  &__video {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+  }
+
+  //   Shade
+  &__shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(13, 79, 157, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      175deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(13, 79, 157, 1) 100%
+    );
+    background: linear-gradient(
+      172deg,
+      rgba(255, 255, 255, 0) 62%,
+      rgb(13, 79, 157) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#0d4f9d",GradientType=1);
+  }
+}
