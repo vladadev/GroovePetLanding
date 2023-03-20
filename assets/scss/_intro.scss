@@ -1,11 +1,17 @@
 .intro {
-  height: calc(100vh - 162px);
+  height: calc(100vh - 163px);
   background-image: url('../images/groovepet_social_network_animals_1-desktop.jpg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-attachment: fixed;
+
   position: relative;
   font-size: 1.7rem;
   z-index: 0;
+
+  @media only screen and (max-width: 1200px) {
+    background-size: cover;
+  }
 
   //   Text
   &__text {
@@ -22,10 +28,16 @@
 
     h1 {
       color: $main-color;
+      font-size: 2.3rem;
     }
 
     h3 {
       font-weight: normal;
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.5rem;
     }
 
     &__span {

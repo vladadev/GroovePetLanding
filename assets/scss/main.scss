@@ -18,5 +18,14 @@ a {
   color: #ffffff;
 }
 
+h1 {
+  color: $main-color;
+  font-size: 2rem;
+}
+
 @import '_header';
 @import '_intro';
+@import '_video';
+@import '_gpOne';
+@import '_gpTwo';
+@import '_gpThree';
