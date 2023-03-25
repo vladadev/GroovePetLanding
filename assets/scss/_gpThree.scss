@@ -1,14 +1,7 @@
 .gpThree {
   min-height: 60vh;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
-  background-color: #f2f2f2;
   width: 100%;
-
-  @media only screen and (max-width: 950px) {
-    flex-direction: column;
-  }
+  background-color: #f2f2f2;
 
   .wrap {
     display: flex;
@@ -17,26 +10,27 @@
     width: 70%;
     height: inherit;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      padding-bottom: 100px;
+      flex-direction: column;
+    }
   }
 
   &__image {
-    padding-top: 50px;
-    max-width: fit-content;
-    // background-image: url('../images/service-siva.jpg');
-    // background-size: contain;
-    // z-index: 5;
-    // /assets/images/service-siva.jpg
+    // padding-top: 50px;
 
     img {
-      height: 100%;
       @media only screen and (max-width: 950px) {
         position: relative;
-        top: -50px;
-        z-index: 5;
+        // top: -80px;
+        z-index: 0;
+        width: 100%;
       }
 
       @media only screen and (max-width: 650px) {
-        width: 100%;
+        // width: 100%;
       }
     }
   }
@@ -53,28 +47,27 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 2.5em;
       margin-bottom: 40px;
       text-align: center;
 
-      @media only screen and (max-width: 650px) {
-        font-size: 1.6rem;
+      @media only screen and (max-width: 960px) {
+        padding-top: 20px;
+        font-size: 2em;
       }
     }
 
     ul {
       margin-left: 40px;
       max-width: fit-content;
-      font-size: 1.6rem;
+      font-size: 1.6em;
 
       @media only screen and (max-width: 950px) {
         margin-left: 10px;
       }
 
-      li {
-        @media only screen and (max-width: 650px) {
-          font-size: 1.2rem;
-        }
+      @media only screen and (max-width: 650px) {
+        font-size: 1.2rem;
       }
     }
 
@@ -83,10 +76,9 @@
       flex-direction: column;
       width: 100%;
 
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 1200px) {
         flex-direction: row;
         align-items: center;
-
         justify-content: space-evenly;
       }
 

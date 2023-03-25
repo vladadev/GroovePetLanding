@@ -6,21 +6,30 @@
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
-  font-size: 1.5rem;
+  // font-size: 1.5em;
   width: 100%;
 
-  @media only screen and (max-width: 950px) {
-    padding: 100px 10px;
+  h1 {
+    font-size: 2.5em;
   }
 
-  @media only screen and (max-width: 650px) {
+  p {
+    font-size: 1.5em;
+  }
+
+  @media only screen and (max-width: 960px) {
+    padding: 50px 10px;
+
     h1 {
-      font-size: 1.6rem;
+      font-size: 2em;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.5em;
     }
+  }
+
+  @media only screen and (max-width: 400px) {
   }
 
   & > * {
