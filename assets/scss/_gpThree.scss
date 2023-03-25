@@ -19,18 +19,11 @@
   }
 
   &__image {
-    // padding-top: 50px;
-
     img {
       @media only screen and (max-width: 950px) {
         position: relative;
-        // top: -80px;
         z-index: 0;
         width: 100%;
-      }
-
-      @media only screen and (max-width: 650px) {
-        // width: 100%;
       }
     }
   }
@@ -80,14 +73,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-      }
-
-      &__one {
-        // color: red;
-      }
-
-      &__two {
-        // color: blue;
       }
     }
   }
