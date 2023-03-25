@@ -71,8 +71,11 @@ h1 {
     width: 100%;
   }
 }
-.header__bottom img {
-  height: 100px;
+.header__bottom__logo {
+  width: min(50vw, 300px);
+}
+.header__bottom__logo img {
+  width: 100%;
 }
 .header__bottom__subscribe button {
   border: none;
@@ -85,7 +88,7 @@ h1 {
 }
 
 .intro {
-  height: calc(100vh - 163px);
+  height: calc(100vh - 155px);
   background-image: url("../images/groovepet_social_network_animals_1-desktop.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -107,6 +110,28 @@ h1 {
   top: 150px;
   cursor: default;
 }
+@media only screen and (max-width: 960px) {
+  .intro__text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0 50px;
+    top: 100px;
+    right: 0;
+  }
+}
 .intro__text > * {
   padding: 10px;
 }
@@ -117,12 +142,26 @@ h1 {
   padding-bottom: 50px;
   text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.59);
 }
+@media only screen and (max-width: 960px) {
+  .intro__text h1 {
+    font-size: 2rem;
+  }
+}
 .intro__text h3 {
-  font-weight: normal;
   font-size: 1.7rem;
+}
+@media only screen and (max-width: 960px) {
+  .intro__text h3 {
+    font-size: 1.5rem;
+  }
 }
 .intro__text p {
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 960px) {
+  .intro__text p {
+    font-size: 1.4rem;
+  }
 }
 .intro__text__span {
   color: rgb(13, 79, 157);
@@ -304,11 +343,14 @@ h1 {
   }
 }
 .gpOne > * {
-  padding: 10px;
+  padding: 50px;
 }
 
 .gpTwo {
   min-height: 60vh;
+  width: 100%;
+}
+.gpTwo .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,10 +359,14 @@ h1 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+  width: 70%;
+  height: inherit;
+  margin: 0 auto;
 }
-@media only screen and (max-width: 950px) {
-  .gpTwo {
+@media only screen and (max-width: 1200px) {
+  .gpTwo .wrap {
+    width: 100%;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -398,7 +444,7 @@ h1 {
           flex-direction: column;
   width: 100%;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
   .gpTwo__text__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

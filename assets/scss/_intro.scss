@@ -1,5 +1,5 @@
 .intro {
-  height: calc(100vh - 163px);
+  height: calc(100vh - 155px);
   background-image: url('../images/groovepet_social_network_animals_1-desktop.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,6 +22,18 @@
     top: 150px;
     cursor: default;
 
+    @media only screen and (max-width: 960px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 50px;
+      top: 100px;
+      right: 0;
+    }
+
     > * {
       padding: 10px;
     }
@@ -32,15 +44,26 @@
       font-family: 'Righteous', cursive;
       padding-bottom: 50px;
       text-shadow: 0px -2px 5px rgba(0, 0, 0, 0.59);
+
+      @media only screen and (max-width: 960px) {
+        font-size: 2rem;
+      }
     }
 
     h3 {
-      font-weight: normal;
       font-size: 1.7rem;
+
+      @media only screen and (max-width: 960px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       font-size: 1.5rem;
+
+      @media only screen and (max-width: 960px) {
+        font-size: 1.4rem;
+      }
     }
 
     &__span {
