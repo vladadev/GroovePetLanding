@@ -21,7 +21,57 @@ a {
 
 h1 {
   color: #0d4f9d;
-  font-size: 2.8em;
+  font-size: 2.5em;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+strong {
+  font-size: 1.6em;
+}
+@media only screen and (max-width: 500px) {
+  strong {
+    font-size: 1.1em;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+::-moz-placeholder {
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+::-ms-input-placeholder {
+  color: black;
+}
+
+::placeholder {
+  color: black;
 }
 
 .header__top {
@@ -353,28 +403,21 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px;
+  padding: 100px 50px;
   width: 100%;
 }
-.gpOne h1 {
-  font-size: 2.5em;
-}
-.gpOne p {
-  font-size: 1.5em;
-}
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 500px) {
   .gpOne {
-    padding: 50px 10px;
-  }
-  .gpOne h1 {
-    font-size: 2em;
-  }
-  .gpOne p {
-    font-size: 1.5em;
+    padding: 50px 15px;
   }
 }
-.gpOne > * {
-  padding: 50px;
+.gpOne h1 {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 400px) {
+  .gpOne > * {
+    padding: 50px 0;
+  }
 }
 
 .gpTwo {
@@ -399,7 +442,7 @@ h1 {
   height: inherit;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   .gpTwo .wrap {
     width: 100%;
     padding: 0;
@@ -411,6 +454,11 @@ h1 {
 }
 .gpTwo__image {
   padding-top: 20px;
+}
+@media only screen and (max-width: 450px) {
+  .gpTwo__image {
+    padding-top: 50px;
+  }
 }
 @media only screen and (max-width: 950px) {
   .gpTwo__image img {
@@ -443,15 +491,13 @@ h1 {
     padding: 0;
   }
 }
-.gpTwo__text h1 {
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 2.5em;
-}
-@media only screen and (max-width: 960px) {
-  .gpTwo__text h1 {
-    font-size: 2em;
+@media only screen and (max-width: 450px) {
+  .gpTwo__text {
+    padding: 0 15px;
   }
+}
+.gpTwo__text h1 {
+  text-align: center;
 }
 .gpTwo__text ul {
   margin-left: 40px;
@@ -465,9 +511,9 @@ h1 {
     margin-left: 10px;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   .gpTwo__text ul {
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 }
 .gpTwo__text__list {
@@ -480,7 +526,7 @@ h1 {
           flex-direction: column;
   width: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   .gpTwo__text__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -494,6 +540,7 @@ h1 {
             justify-content: space-evenly;
   }
 }
+
 .gpThree {
   min-height: 660px;
   width: 100%;
@@ -512,7 +559,7 @@ h1 {
   height: inherit;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   .gpThree .wrap {
     width: 100%;
     padding-bottom: 100px;
@@ -520,6 +567,11 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .gpThree__image img {
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -542,15 +594,23 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 1200px) {
+  .gpThree__text {
+    padding: 0 30px;
+  }
+}
 @media only screen and (max-width: 950px) {
   .gpThree__text {
     width: 100%;
     padding: 0;
   }
 }
+@media only screen and (max-width: 450px) {
+  .gpThree__text {
+    padding: 0 15px;
+  }
+}
 .gpThree__text h1 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
   text-align: center;
 }
 @media only screen and (max-width: 960px) {
@@ -564,16 +624,16 @@ h1 {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 @media only screen and (max-width: 950px) {
   .gpThree__text ul {
     margin-left: 10px;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   .gpThree__text ul {
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 }
 .gpThree__text__list {
@@ -586,7 +646,7 @@ h1 {
           flex-direction: column;
   width: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   .gpThree__text__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -624,22 +684,14 @@ h1 {
   text-align: center;
   height: inherit;
 }
-.gpFour h1 {
-  font-size: 2.5em;
-  margin: 80px 0;
-}
-.gpFour p {
-  font-size: 1.5em;
-}
 @media only screen and (max-width: 960px) {
   .gpFour {
     padding: 50px 0;
   }
-  .gpFour h1 {
-    font-size: 2em;
-  }
-  .gpFour p {
-    font-size: 1.5em;
+}
+@media only screen and (max-width: 450px) {
+  .gpFour {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -651,6 +703,14 @@ h1 {
 }
 .gpFour__text {
   padding: 0 50px;
+}
+.gpFour__text h1 {
+  margin-top: 80px;
+}
+@media only screen and (max-width: 500px) {
+  .gpFour__text {
+    padding: 0 15px;
+  }
 }
 
 .gpFive {
@@ -714,6 +774,11 @@ h1 {
     padding: 0;
   }
 }
+@media only screen and (max-width: 500px) {
+  .gpFive__text {
+    font-size: 1em;
+  }
+}
 .gpFive__text ul {
   list-style-type: none;
 }
@@ -732,8 +797,14 @@ h1 {
   counter-increment: list;
   margin-bottom: 10px;
 }
-.gpFive__text ul P {
+.gpFive__text ul p {
   padding-left: 56px;
+}
+@media only screen and (max-width: 450px) {
+  .gpFive__text ul strong {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .gpFive__image {
@@ -753,9 +824,96 @@ h1 {
 
 .gpSix {
   min-height: 70vh;
-  background-color: gray;
 }
 
 .gpSeven {
   min-height: 70vh;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/groovepet_social_network_world_9.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1520px) {
+  .gpSeven {
+    background-size: 100%;
+  }
+}
+.gpSeven .wrap {
+  padding-top: 100px;
+  padding-bottom: 300px;
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .gpSeven .wrap {
+    width: 90%;
+    padding-bottom: 200px;
+  }
+}
+.gpSeven__text p {
+  font-weight: bold;
+}
+.gpSeven__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+.gpSeven__form .email {
+  height: 40px;
+  width: 400px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 20px;
+  outline: none;
+  color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  .gpSeven__form .email {
+    width: 100%;
+  }
+}
+.gpSeven__form .subscribe {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background: #0d4f9d;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  color: #fff;
+}
+.gpSeven__form .subscribe:hover {
+  background: #196dd3;
+}
+@media only screen and (max-width: 600px) {
+  .gpSeven__form .subscribe {
+    width: 100%;
+  }
+}
+
+.footer {
+  min-height: 40vh;
 }

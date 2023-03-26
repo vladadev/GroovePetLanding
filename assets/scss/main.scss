@@ -26,7 +26,37 @@ a {
 
 h1 {
   color: $main-color;
-  font-size: 2.8em;
+  font-size: 2.5em;
+  padding-bottom: 50px;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 2em;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5em;
+  }
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.6;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1em;
+  }
+}
+
+strong {
+  font-size: 1.6em;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.1em;
+  }
+}
+
+::placeholder {
+  color: black;
 }
 
 @import '_header';
@@ -39,3 +69,4 @@ h1 {
 @import '_gpFive';
 @import '_gpSix';
 @import '_gpSeven';
+@import '_footer';

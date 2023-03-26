@@ -13,25 +13,12 @@
     height: inherit;
   }
 
-  h1 {
-    font-size: 2.5em;
-    margin: 80px 0;
-  }
-
-  p {
-    font-size: 1.5em;
-  }
-
   @media only screen and (max-width: 960px) {
     padding: 50px 0;
+  }
 
-    h1 {
-      font-size: 2em;
-    }
-
-    p {
-      font-size: 1.5em;
-    }
+  @media only screen and (max-width: 450px) {
+    padding: 0;
   }
 
   &__image {
@@ -46,5 +33,13 @@
 
   &__text {
     padding: 0 50px;
+
+    h1 {
+      margin-top: 80px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 0 15px;
+    }
   }
 }
