@@ -16,6 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -204,7 +210,118 @@
       </section>
 
       <section class="gpSix">
-        <h1 style="text-align: center; padding-top: 100px">Ovde ide slider</h1>
+        <div class="gpSix__text">
+          <h1>BUILT BY THE PEOPLE WHO LOVELY ANIMALS</h1>
+          <p>
+            The application was built by people who love animals, and each team
+            member is an expert in their work. They combined their love,
+            talents, and professional skills and made a strange place that will
+            bring a better emotion to the world because animals are pure
+            emotions and unconditional love. Join our community and discover the
+            magical world of animals on our planet.
+          </p>
+        </div>
+
+        <div class="gpSix__testimonial mySwiper">
+          <div class="gpSix__testimonial__content swiper-wrapper">
+            <!-- Slides Start -->
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/marija.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Marija Okičić</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/mirjana.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Mirjana</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/nata.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Nata</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/veljko.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Veljko</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/vladimir.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Vladimir</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/biljana.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Biljana</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <div class="gpSix__testimonial__content__slide swiper-slide">
+              <img
+                src="/assets/images/dragana.png"
+                alt="Slide Img"
+                class="image"
+              />
+
+              <div class="details">
+                <span class="name">Dragana</span>
+                <span class="role">System Administrator</span>
+                <span class="role">Marija</span>
+              </div>
+            </div>
+            <!-- Slides End -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
 
       <section class="gpSeven">
@@ -255,6 +372,25 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+    </script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
