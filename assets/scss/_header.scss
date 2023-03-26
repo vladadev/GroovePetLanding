@@ -19,11 +19,19 @@
 
     &__contact__email {
       .fa-envelope {
-        color: #fff;
+        color: #ffffff;
       }
 
       a {
-        color: #ffffff !important;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+
+    &__contact__login {
+      a {
+        color: #ffffff;
+        text-decoration: none;
       }
     }
   }
