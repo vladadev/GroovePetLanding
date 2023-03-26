@@ -161,6 +161,7 @@ h1 {
 }
 .intro__text h3 {
   font-size: 1.7em;
+  color: #ec0186;
 }
 @media only screen and (max-width: 960px) {
   .intro__text h3 {
@@ -494,7 +495,7 @@ h1 {
   }
 }
 .gpThree {
-  min-height: 60vh;
+  min-height: 660px;
   width: 100%;
   background-color: #f2f2f2;
 }
@@ -598,4 +599,163 @@ h1 {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+}
+
+.gpFour {
+  min-height: 70vh;
+  width: 100%;
+}
+.gpFour .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+  text-align: center;
+  height: inherit;
+}
+.gpFour h1 {
+  font-size: 2.5em;
+  margin: 80px 0;
+}
+.gpFour p {
+  font-size: 1.5em;
+}
+@media only screen and (max-width: 960px) {
+  .gpFour {
+    padding: 50px 0;
+  }
+  .gpFour h1 {
+    font-size: 2em;
+  }
+  .gpFour p {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .gpFour__image img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+  }
+}
+.gpFour__text {
+  padding: 0 50px;
+}
+
+.gpFive {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 70px 0;
+}
+@media only screen and (max-width: 1200px) {
+  .gpFive {
+    padding: 150px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .gpFive {
+    padding: 100px 0;
+  }
+}
+.gpFive .wrap {
+  margin: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  min-height: 70vh;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .gpFive .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .gpFive .wrap {
+    width: 100%;
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .gpFive .wrap {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.gpFive__text {
+  padding-right: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .gpFive__text {
+    padding: 0;
+  }
+}
+.gpFive__text ul {
+  list-style-type: none;
+}
+.gpFive__text ul li:before {
+  content: counter(list);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px 20px 0;
+}
+.gpFive__text ul li {
+  counter-increment: list;
+  margin-bottom: 10px;
+}
+.gpFive__text ul P {
+  padding-left: 56px;
+}
+@media only screen and (max-width: 1200px) {
+  .gpFive__image {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .gpFive__image {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .gpFive__image img {
+    width: 100%;
+  }
+}
+
+.gpSix {
+  min-height: 70vh;
+  background-color: gray;
+}
+
+.gpSeven {
+  min-height: 70vh;
 }

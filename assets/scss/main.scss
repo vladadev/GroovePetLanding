@@ -29,21 +29,13 @@ h1 {
   font-size: 2.8em;
 }
 
-// p {
-//   font-size: 1.5em;
-
-//   @media only screen and (max-width: 960px) {
-//     font-size: 1.4em;
-//   }
-
-//   @media only screen and (max-width: 400px) {
-//     font-size: 1.2em;
-//   }
-// }
-
 @import '_header';
 @import '_intro';
 @import '_video';
 @import '_gpOne';
 @import '_gpTwo';
 @import '_gpThree';
+@import '_gpFour';
+@import '_gpFive';
+@import '_gpSix';
+@import '_gpSeven';
