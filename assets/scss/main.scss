@@ -5,7 +5,8 @@
 
 // Variables
 @import '_var';
-@import '_mixins';
+@import './mixins/_buttons';
+@import './mixins/_forms';
 
 * {
   margin: 0;

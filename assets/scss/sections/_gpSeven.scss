@@ -33,44 +33,46 @@
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 50px 0;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // width: 100%;
+    // padding: 50px 0;
 
-    .email {
-      height: 40px;
-      width: 400px;
-      border: none;
-      margin-bottom: 15px;
-      padding: 20px;
-      outline: none;
-      color: #000000;
+    // .email {
+    //   height: 40px;
+    //   width: 400px;
+    //   border: none;
+    //   margin-bottom: 15px;
+    //   padding: 20px;
+    //   outline: none;
+    //   color: #000000;
 
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-      }
-    }
+    //   @media only screen and (max-width: 600px) {
+    //     width: 100%;
+    //   }
+    // }
 
-    .subscribe {
-      width: 400px;
-      height: 40px;
-      border: none;
-      background: $main-color;
-      cursor: pointer;
-      transition: all 0.3s linear;
-      font-weight: bold;
-      color: #fff;
+    // .subscribe {
+    //   width: 400px;
+    //   height: 40px;
+    //   border: none;
+    //   background: $main-color;
+    //   cursor: pointer;
+    //   transition: all 0.3s linear;
+    //   font-weight: bold;
+    //   color: #fff;
 
-      &:hover {
-        background: #196dd3;
-      }
+    //   &:hover {
+    //     background: #196dd3;
+    //   }
 
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-      }
-    }
+    //   @media only screen and (max-width: 600px) {
+    //     width: 100%;
+    //   }
+    // }
+
+    @include newsletter-form;
   }
 }
