@@ -63,12 +63,11 @@
     line-height: 1.6;
 
     &:before {
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid #a9a9a9;
       content: '';
       left: 50%;
       margin: 0 0 0 -45px;
       position: absolute;
-      top: 0;
       width: 90px;
     }
   }

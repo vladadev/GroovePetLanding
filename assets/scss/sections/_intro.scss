@@ -1,9 +1,10 @@
 .intro {
   height: calc(100vh - 155px);
-  background-image: url('../images/groovepet_social_network_animals_1-desktop.jpg');
+  background-image: url('../images/groovepet_head_bg.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+  object-fit: cover;
 
   position: relative;
   z-index: 0;
@@ -16,8 +17,6 @@
   &__text {
     position: absolute;
     z-index: 3;
-    // width: 50vw;
-    // right: 150px;
     top: 150px;
     cursor: default;
 
@@ -29,7 +28,6 @@
     flex-direction: column;
     text-align: center;
     padding: 0 50px;
-    // top: 100px;
     right: 0;
 
     @media only screen and (max-width: 960px) {

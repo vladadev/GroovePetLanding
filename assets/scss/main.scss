@@ -54,13 +54,15 @@ strong {
 }
 
 @import '_header';
-@import '_intro';
-@import '_video';
-@import '_gpOne';
-@import '_gpTwo';
-@import '_gpThree';
-@import '_gpFour';
-@import '_gpFive';
-@import '_gpSix';
-@import '_gpSeven';
+@import './sections/intro';
+@import './sections/_video';
+@import './sections/_gpOne';
+@import './sections/_gpTwo';
+@import './sections/_gpThree';
+@import './sections/_gpFour';
+@import './sections/_gpFive';
+@import './sections/_gpSix';
+@import './sections/_gpSeven';
 @import '_footer';
+
+@import './sections/_newsletterPopup';
