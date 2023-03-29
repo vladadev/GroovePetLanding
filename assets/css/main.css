@@ -1053,7 +1053,11 @@ strong {
   z-index: 11;
   width: 100%;
   height: 100vh;
-  display: none;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1090,8 +1094,8 @@ strong {
   min-height: 50vh;
   background: #ffffff;
   padding: 50px;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -1099,6 +1103,9 @@ strong {
   .newsletter__popup__front {
     padding: 20px;
   }
+}
+.newsletter__popup__front h1 {
+  padding-top: 50px;
 }
 .newsletter__popup__front p {
   font-weight: 600;
@@ -1112,6 +1119,13 @@ strong {
   color: rgb(212, 93, 93);
   font-weight: 900;
   font-size: 30px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.newsletter__popup__front button:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  cursor: pointer;
 }
 .newsletter__popup__form {
   display: -webkit-box;
@@ -1170,4 +1184,7 @@ strong {
 }
 .newsletter__popup__form input[type=email]:focus {
   border-bottom: 1px solid gray;
+}
+.hidden {
+  display: none !important;
 }
