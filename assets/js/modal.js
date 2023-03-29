@@ -12,7 +12,7 @@ window.onload = e => {
 
   setTimeout(() => {
     showModal()
-  }, 1000)
+  }, 5000)
 }
 const showModal = function () {
   modalWrapper.classList.remove('hidden')
