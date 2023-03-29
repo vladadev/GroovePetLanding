@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3;
+
+  .socials-tab {
+    transform: translateX(-140px);
+    transition: 0.4s linear;
+    background-color: $main-color;
+    width: 200px;
+    height: 50px;
+
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+
+  .socials-tab a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 5px 5px 0;
+
+    p {
+      width: 150px;
+      text-align: center;
+    }
+
+    i.fa-brands {
+      font-size: 30px;
+      padding: 5px;
+    }
+  }
+}

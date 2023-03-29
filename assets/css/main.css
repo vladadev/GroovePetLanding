@@ -1188,3 +1188,56 @@ strong {
 .hidden {
   display: none !important;
 }
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 3;
+}
+.socials .socials-tab {
+  -webkit-transform: translateX(-140px);
+          transform: translateX(-140px);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  background-color: #0d4f9d;
+  width: 200px;
+  height: 50px;
+}
+.socials .socials-tab:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.socials .socials-tab a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 5px 5px 0;
+}
+.socials .socials-tab a p {
+  width: 150px;
+  text-align: center;
+}
+.socials .socials-tab a i.fa-brands {
+  font-size: 30px;
+  padding: 5px;
+}
