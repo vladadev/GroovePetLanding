@@ -14,3 +14,8 @@ function smoothScroll(event) {
     behavior: 'smooth',
   })
 }
+
+// Copyright year
+const footerCopyright = document.querySelector('.footer__copyright')
+const year = new Date().getFullYear()
+footerCopyright.innerHTML = `© ${year} GROOVEPET. ALL RIGHTS RESERVED.`
