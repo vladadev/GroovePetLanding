@@ -1,69 +1,32 @@
 @import '_var';
 
 .header {
-  &__top {
-    background: #292c40;
-    width: 100%;
+  width: 100%;
 
-    .wrap {
-      display: flex;
-      justify-content: space-between;
-      width: 70%;
-      margin: 0 auto;
-      padding: 20px 20px;
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
 
-      @media only screen and (max-width: 1200px) {
-        width: 100%;
-      }
-    }
-
-    &__contact__email {
-      .fa-envelope {
-        color: #ffffff;
-      }
-
-      a {
-        color: #ffffff;
-        text-decoration: none;
-      }
-    }
-
-    &__contact__login {
-      a {
-        color: #ffffff;
-        text-decoration: none;
-      }
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
     }
   }
 
-  &__bottom {
-    width: 100%;
+  &__logo {
+    width: min(50vw, 300px);
 
-    .wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 70%;
-      margin: 0 auto;
-
-      @media only screen and (max-width: 1200px) {
-        width: 100%;
-      }
+    img {
+      width: 100%;
     }
+  }
 
-    &__logo {
-      width: min(50vw, 300px);
-
-      img {
-        width: 100%;
-      }
-    }
-
-    &__subscribe {
-      button {
-        @include button-mixin;
-        padding: 20px;
-      }
+  &__subscribe {
+    button {
+      @include button-mixin;
+      padding: 20px;
     }
   }
 }

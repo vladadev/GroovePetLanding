@@ -69,41 +69,10 @@ strong {
   color: black;
 }
 
-.header__top {
-  background: #292c40;
+.header {
   width: 100%;
 }
-.header__top .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
-  padding: 20px 20px;
-}
-@media only screen and (max-width: 1200px) {
-  .header__top .wrap {
-    width: 100%;
-  }
-}
-.header__top__contact__email .fa-envelope {
-  color: #ffffff;
-}
-.header__top__contact__email a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.header__top__contact__login a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.header__bottom {
-  width: 100%;
-}
-.header__bottom .wrap {
+.header .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,17 +86,17 @@ strong {
   margin: 0 auto;
 }
 @media only screen and (max-width: 1200px) {
-  .header__bottom .wrap {
+  .header .wrap {
     width: 100%;
   }
 }
-.header__bottom__logo {
+.header__logo {
   width: min(50vw, 300px);
 }
-.header__bottom__logo img {
+.header__logo img {
   width: 100%;
 }
-.header__bottom__subscribe button {
+.header__subscribe button {
   border: none;
   color: #0d4e9c;
   background: #fff;
