@@ -138,7 +138,7 @@ strong {
 }
 
 .intro {
-  height: calc(100vh - 155px);
+  height: calc(100vh - 96px);
   background-image: url("../images/groovepet_head_bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;

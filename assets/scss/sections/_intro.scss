@@ -1,5 +1,5 @@
 .intro {
-  height: calc(100vh - 155px);
+  height: calc(100vh - 96px);
   background-image: url('../images/groovepet_head_bg.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,7 +19,6 @@
     z-index: 3;
     top: 150px;
     cursor: default;
-
     width: 100%;
     height: 50%;
     display: flex;
@@ -156,13 +155,4 @@
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#0d4f9d",GradientType=1);
   }
-
-  // &__shade--gray {
-  //   position: absolute;
-  //   z-index: 1;
-  //   width: 100%;
-  //   height: 100%;
-
-  //   background: rgb(92 92 92 / 40%);
-  // }
 }
